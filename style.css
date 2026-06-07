@@ -1,0 +1,23 @@
+.container{
+    background-color: grey;
+}
+.result{
+    background-color: lightblue;
+}
+.operands{
+    display: flex;
+}
+.numbers{
+    display:flex;
+    flex-wrap: wrap;
+}
+.arithmetic{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    background-color: lightgray;
+}
+.boz{
+    background-color: aquamarine;
+}
