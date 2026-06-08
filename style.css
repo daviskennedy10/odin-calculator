@@ -4,9 +4,11 @@
     height: 1000px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     gap: 30px;
+    padding: 20px;
+    border-radius: 50px;
 }
 .result{
     background-color: lightblue;
@@ -18,7 +20,7 @@
     display: flex;
     width: 900px;
     height: 700px;
-    border: 2px solid red;
+    
 }
 .numbers{
     display:flex;
@@ -26,7 +28,6 @@
     gap: 30px;
     width: 600px;
     height: 680px;
-    border: 2px solid red;
     justify-content: center;
     
    
@@ -36,9 +37,9 @@
     flex-direction: column;
     width: 300px;
     height: 680px;
-    border: 2px solid blue;
-    gap: 50px;
-    justify-content: center;
+    
+    gap:10px;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -47,14 +48,14 @@
     gap: 20px;
     width: 600px;
     height: 150px;
-    border: 2px solid blue;
+    
     justify-content: space-between;
 
 }
 .box-sec{
     width: 600px;
     height: 150px;
-    border: 2px solid blue;
+    
     background-color: lightgrey;
     border-radius: 15px;
 }
@@ -64,10 +65,10 @@
     height: 140px;
     border-radius: 15px;
 }
-.boz{
+.boz,.boz-ac,.boz-equal{
     background-color: aquamarine;
     width: 250px;
-    height: 200px;
+    height: 100px;
     border-radius: 15px;
 
 }
@@ -76,4 +77,7 @@ h1{
     color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
+}
+.text{
+    text-align: right;
 }
