@@ -58,17 +58,38 @@ number.addEventListener("click", ()=>{
 const numbers = document.querySelectorAll(".box, .box-sec")
 numbers.forEach((number) =>{
     number.addEventListener("click", ()=>{
+        //number.style.backgroundColor = "darkgray"
         const placer = number.firstElementChild
         const placerText = placer.textContent
 
         display.textContent += placerText
     })
 })
+numbers.forEach((number) =>{
+    number.addEventListener("mousedown", ()=>{
+        number.style.backgroundColor = "darkgray"
+    })
+})
+numbers.forEach((number) =>{
+    number.addEventListener("mouseup", ()=>{
+        number.style.backgroundColor = "lightgray"
+    })
+})
 
 const calcs = document.querySelectorAll(".boz")
 calcs.forEach((calc) =>{
     calc.addEventListener("click", ()=>{
-        firstNum = display.textContent
+        if(operator !== null){
+            secondNum = display.textContent
+            firstNumber = Number(firstNum)
+            secondNumber = Number(secondNum)
+            firstNum = operate(operator, firstNumber, secondNumber)
+            
+        }
+        else{
+            firstNum = display.textContent
+        }
+        
         display.textContent = ""
         const placer = calc.firstElementChild
         operator = placer.textContent
@@ -77,10 +98,13 @@ calcs.forEach((calc) =>{
 
 const equal = document.querySelector(".boz-equal")
 equal.addEventListener("click", ()=>{
+    //equal.style.backgroundColor = "darkgrey"
     secondNum = display.textContent
     firstNumber = Number(firstNum)
     secondNumber = Number(secondNum)
     display.textContent = operate(operator, firstNumber, secondNumber)
+    
+    
 
 })
 
@@ -92,5 +116,6 @@ ac.addEventListener("click", ()=>{
     operator = null
     firstNumber = null
     secondNumber = null
+    holder = null
     
 })

@@ -1,5 +1,5 @@
 .container{
-    background-color: grey;
+    background-color: rgb(217, 42, 42);
     width: 1000px;
     height: 1000px;
     display: flex;
@@ -15,6 +15,10 @@
     width: 900px;
     height: 200px;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
 }
 .operands{
     display: flex;
@@ -79,5 +83,5 @@ h1{
     font-size: 40px;
 }
 .text{
-    text-align: right;
+    font-size: 130px;
 }
